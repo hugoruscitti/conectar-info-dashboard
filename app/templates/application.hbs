@@ -1,3 +1,27 @@
-<h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+
+    <div class="ui fixed inverted menu">
+      <div class="ui container">
+        {{#link-to "index" class="header item no-link"}}
+          <img class="logo" src="icon.png">
+          &nbsp; conectar-info
+        {{/link-to}}
+
+        {{#link-to "index" class="item"}}Dashboard{{/link-to}}
+        {{#link-to "events" class="item"}}Eventos{{/link-to}}
+        {{#link-to "help" class="item"}}Ayuda{{/link-to}}
+
+      </div>
+    </div>
+
+    {{liquid-outlet}}
+
+    <div class="ui inverted vertical footer segment">
+      <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        <img src="icon_small.png" class="ui centered mini image">
+        <div class="ui horizontal inverted small divided link list">
+          <a class="item" href="http://github.com/HuayraLinux" target=_black>Desarrollado por el equipo huayra</a>
+        </div>
+      </div>
+    </div>
