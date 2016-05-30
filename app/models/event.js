@@ -6,6 +6,6 @@ export default Model.extend({
   os: attr('string'),
   lon: attr('number'),
   lat: attr(),
-  last_update: attr('date'),
+  date: attr('date'),
   ip: attr('string'),
 });

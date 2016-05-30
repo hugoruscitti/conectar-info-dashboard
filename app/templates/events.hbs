@@ -20,7 +20,7 @@
         <td>{{m.ip}}</td>
         <td>{{m.os}}</td>
         <td>{{m.os_version}}</td>
-        <td>{{m.last_update}}</td>
+        <td>{{moment-from-now m.date}}</td>
       </tr>
     {{else}}
       <p>No hay registros para mostrar.</p>
