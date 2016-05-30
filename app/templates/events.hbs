@@ -2,4 +2,52 @@
 
   <h1>Eventos</h1>
 
+
+  <table class="ui celled table">
+  <thead>
+    <tr>
+      <th>IP</th>
+      <th>Sistema</th>
+      <th>Versión</th>
+      <th>Instante de reporte</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    {{#each model as |m|}}
+      <tr>
+        <td>{{m.ip}}</td>
+        <td>{{m.os}}</td>
+        <td>{{m.os_version}}</td>
+        <td>{{m.last_update}}</td>
+      </tr>
+    {{else}}
+      <p>No hay registros para mostrar.</p>
+    {{/each}}
+  </tbody>
+
+  <!--
+  <tfoot>
+    <tr>
+      <th colspan="3">
+        <div class="ui right floated pagination menu">
+          <a class="icon item">
+            <i class="left chevron icon"></i>
+          </a>
+          <a class="item">1</a>
+          <a class="item">2</a>
+          <a class="item">3</a>
+          <a class="item">4</a>
+          <a class="icon item">
+            <i class="right chevron icon"></i>
+          </a>
+        </div>
+      </th>
+    </tr>
+  </tfoot>
+  -->
+
+</table>
+
 </div>
