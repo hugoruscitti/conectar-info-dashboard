@@ -1,6 +1,6 @@
 import RESTAdapter from 'ember-data/adapters/rest';
+import ENV from "../config/environment";
 
 export default RESTAdapter.extend({
-  host: 'http://localhost:4000',
-  namespace: 'api'
+  host: ENV.apiURL,
 });
